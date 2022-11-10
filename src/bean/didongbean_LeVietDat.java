@@ -1,14 +1,16 @@
 package bean;
 
 public class didongbean_LeVietDat {
-	private String Madidong;
+	private int Madidong;
+	private String tendidong;
 	private String nhacungcap;
-	private int gia;
+	private long gia;
 	private int soluong;
 	private String anh;
-	public didongbean_LeVietDat(String madidong, String nhacungcap, int gia, int soluong, String anh) {
+	public didongbean_LeVietDat(int madidong, String tendidong, String nhacungcap, long gia, int soluong, String anh) {
 		super();
 		Madidong = madidong;
+		this.tendidong = tendidong;
 		this.nhacungcap = nhacungcap;
 		this.gia = gia;
 		this.soluong = soluong;
@@ -17,11 +19,17 @@ public class didongbean_LeVietDat {
 	public didongbean_LeVietDat() {
 		super();
 	}
-	public String getMadidong() {
+	public int getMadidong() {
 		return Madidong;
 	}
-	public void setMadidong(String madidong) {
+	public void setMadidong(int madidong) {
 		Madidong = madidong;
+	}
+	public String getTendidong() {
+		return tendidong;
+	}
+	public void setTendidong(String tendidong) {
+		this.tendidong = tendidong;
 	}
 	public String getNhacungcap() {
 		return nhacungcap;
@@ -29,10 +37,10 @@ public class didongbean_LeVietDat {
 	public void setNhacungcap(String nhacungcap) {
 		this.nhacungcap = nhacungcap;
 	}
-	public int getGia() {
+	public long getGia() {
 		return gia;
 	}
-	public void setGia(int gia) {
+	public void setGia(long gia) {
 		this.gia = gia;
 	}
 	public int getSoluong() {
@@ -47,5 +55,9 @@ public class didongbean_LeVietDat {
 	public void setAnh(String anh) {
 		this.anh = anh;
 	}
+	
+	
+	
+	
 	
 }
